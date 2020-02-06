@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<script type="text/javascript"                  
+src="https://uat.simplify.com/commerce/simplify.pay.js"></script>                   
+<button data-sc-key="="your live api key goes here ""                 
+data-name="Jasmine Green Tea"                   
+data-description="Smooth tea with a rich jasmine bouquet"                   
+data-reference="99999"                  
+data-amount="3000"                  
+data-color="#12B830">                   
+Buy Now                 
+</button>
+</body>
+</html>
