@@ -83,9 +83,25 @@ Buy Now
 </body>
 </html>
 ```
-Information about modal [Redirect Url](https://ibanknbg.uat.simplify.com/commerce/docs/tools/hosted-payments#redirect-url)
+### Modal Redirect URL
+Use the redirect URL to return your customers back to your website with the response parameters returned in the query string. This option is ideal for websites that do not use HTTPS.
 
-Information about [handling responses](https://ibanknbg.uat.simplify.com/commerce/docs/tools/hosted-payments#js)
+```
+<script type="text/javascript" src="https://www.uat.simplify.com/commerce/simplify.pay.js"></script>
+<button data-sc-key="YOUR_HOSTED_PAYMENTS_ENABLED_PUBLIC_KEY"
+        data-name="Jasmine Green Tea"
+        data-description="Smooth tea with a rich jasmine bouquet"
+        data-reference="99999"
+        data-amount="3000"
+        data-color="#12B830"
+        data-redirect-url="https://www.example.com/checkout.html">
+        Buy Now
+</button>
+```
+
+More about modal redirect url [here](https://ibanknbg.uat.simplify.com/commerce/docs/tools/hosted-payments#redirect-url) .
+
+You can find Information about handling responses [here](https://ibanknbg.uat.simplify.com/commerce/docs/tools/hosted-payments#js).
 
 Choose one option and follow the instructions for 5 scenarios with the example number card below. It&#39;s important for each transaction you fill in the data reference in the table below.
 
