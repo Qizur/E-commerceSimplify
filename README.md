@@ -83,10 +83,15 @@ Buy Now
 </body>
 </html>
 ```
+Information about modal [Redirect Url](https://ibanknbg.uat.simplify.com/commerce/docs/tools/hosted-payments#redirect-url)
+
+Information about [handling responses](https://ibanknbg.uat.simplify.com/commerce/docs/tools/hosted-payments#js)
 
 Choose one option and follow the instructions for 5 scenarios with the example number card below. It&#39;s important for each transaction you fill in the data reference in the table below.
 
 ! Note: For each transaction you have to change the &quot;data-reference&quot; and then you try to do the payment. After payment add the data-reference in the table.
+
+For more information about Hosted Checkout please visit this [documentation](https://ibanknbg.uat.simplify.com/commerce/docs/tools/hosted-payments).
 
 ### Example number card
 
