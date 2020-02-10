@@ -62,7 +62,8 @@ The only difference is the "iframe" instead of "button" in a modal (in html file
 - Change the value of the &quot;data-reference&quot; attribute to your reference number for the payment
 
 Now, it is displayed the form direct on your page.
-### Simple example html file (modal)
+
+**Simple example html file (modal)**
 ```
 <!DOCTYPE html>
 <html>
@@ -83,7 +84,8 @@ Buy Now
 </body>
 </html>
 ```
-### Modal Redirect URL
+**Modal Redirect URL**
+
 Use the redirect URL to return your customers back to your website with the response parameters returned in the query string. This option is ideal for websites that do not use HTTPS.
 
 ```
@@ -109,7 +111,7 @@ Choose one option and follow the instructions for 5 scenarios with the example n
 
 For more information about Hosted Checkout please visit this [documentation](https://ibanknbg.uat.simplify.com/commerce/docs/tools/hosted-payments).
 
-### Example number card
+**Example number card**
 
 Correct Card Details:
 
