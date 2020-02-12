@@ -23,7 +23,7 @@ The checkout is fully hosted, compliant with updated PCI standards and requires 
 ```
 	<script type="text/javascript"
 	        src="https://www.simplify.com/commerce/simplify.pay.js"></script>
-	<button data-sc-key="YOUR_HOSTED_PAYMENTS_ENABLED_PUBLIC_KEY"
+	<button data-sc-key="lvpb_YmI2ZjI1M2UtNDM5ZS00ZGEyLThiNmQtZjczNGVlZTdjNDNi"
 	        data-name="Jasmine Green Tea"
 	        data-description="Smooth tea with a rich jasmine bouquet"
 	        data-reference="99999"
@@ -46,7 +46,7 @@ Your second option is to put an embedded form in you web page by adding the seco
 	<script type="text/javascript"
 	        src="https://www.simplify.com/commerce/simplify.pay.js"></script>
 	<iframe name="my-hosted-form"
-	        data-sc-key="YOUR_HOSTED_PAYMENTS_ENABLED_PUBLIC_KEY"
+	        data-sc-key="lvpb_YmI2ZjI1M2UtNDM5ZS00ZGEyLThiNmQtZjczNGVlZTdjNDNi"
 	        data-name="Jasmine Green Tea"
 	        data-description="Smooth tea with a rich jasmine bouquet"
 	        data-reference="99999"
@@ -73,7 +73,7 @@ Now, it is displayed the form direct on your page.
 <body>
 <script type="text/javascript"                  
 src="https://uat.simplify.com/commerce/simplify.pay.js"></script>                   
-<button data-sc-key="="your live api key goes here ""                 
+<button data-sc-key="lvpb_YmI2ZjI1M2UtNDM5ZS00ZGEyLThiNmQtZjczNGVlZTdjNDNi"                 
 data-name="Jasmine Green Tea"                   
 data-description="Smooth tea with a rich jasmine bouquet"                   
 data-reference="99999"                  
@@ -90,7 +90,7 @@ Use the redirect URL to return your customers back to your website with the resp
 
 ```
 <script type="text/javascript" src="https://www.uat.simplify.com/commerce/simplify.pay.js"></script>
-<button data-sc-key="YOUR_HOSTED_PAYMENTS_ENABLED_PUBLIC_KEY"
+<button data-sc-key="lvpb_YmI2ZjI1M2UtNDM5ZS00ZGEyLThiNmQtZjczNGVlZTdjNDNi"
         data-name="Jasmine Green Tea"
         data-description="Smooth tea with a rich jasmine bouquet"
         data-reference="99999"
