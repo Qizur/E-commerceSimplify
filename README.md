@@ -153,7 +153,7 @@ After all these scenarios, you can confirm the result from the merchant administ
 
 After finding the transaction you can see the details payments. When you find the payment with your &quot;data reference&quot; you can note the &quot;ID&quot; value in the table, too.
 
- ![img2](images/img2.png)
+ ![SimplifyPlatform](images/SimplifyPlatform.png)
 
 After filling in the data reference and the ID for each scenario, you have to send us the updated table.
 
@@ -161,7 +161,6 @@ After filling in the data reference and the ID for each scenario, you have to se
 The Direct API Integration enables merchants to process credit card and check transactions in real time directly through ecommerce solution. In below link you can find the API calls that you can use with instructions.
 
 [Direct API Calls instructions](https://ibanknbg.uat.simplify.com/commerce/docs/api/index?api=payments)
-
 
 
 ### Plugins 
