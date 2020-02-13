@@ -153,7 +153,7 @@ After all these scenarios, you can confirm the result from the merchant administ
 
 After finding the transaction you can see the details payments. When you find the payment with your &quot;data reference&quot; you can note the &quot;ID&quot; value in the table, too.
 
- ![SimplifyPlatform](images/SimplifyPlatform.png)
+ ![SimplifyPlatform](images/SimplifyPlatform.PNG)
 
 After filling in the data reference and the ID for each scenario, you have to send us the updated table.
 
