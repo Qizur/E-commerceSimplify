@@ -164,7 +164,7 @@ After filling in the data reference and the ID for each scenario, you have to se
 
 ### Direct API 
 
-Another option to integrate is direct API. The Direct API Integration enables merchants to process credit card and check transactions in real time directly through ecommerce solution. To use direct API calls you have to download first the SDK from [here]((https://ibanknbg.uat.simplify.com/commerce/docs/sdk/index)). Also, in this case you have to use the (default) public API key (Live or SandBox). In below link you can find the API calls that you can use with instructions. Each section of our API includes detailed information about methods & parameters as well as example code.
+Another option to integrate is direct API. The Direct API Integration enables merchants to process credit card and check transactions in real time directly through ecommerce solution. To use direct API calls you have to download first the SDK from [here](https://ibanknbg.uat.simplify.com/commerce/docs/sdk/index). Also, in this case you have to use the (default) public API key (Live or SandBox). In below link you can find the API calls that you can use with instructions. Each section of our API includes detailed information about methods & parameters as well as example code.
 
 [Direct API Calls instructions](https://ibanknbg.uat.simplify.com/commerce/docs/api/index?api=payments)
 
