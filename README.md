@@ -10,7 +10,7 @@
 
 [SDKs](#Available-SDKs)
 
-# Testing Modes
+## Testing Modes
 
 The i-bank my Store API can be accessed in Sandbox or Live modes. In Sandbox mode, all payments are simulated. In Live mode, payments are real. The API key specified in API requests determines which mode is accessed. When logged into the i-bank my Store web portal, you can switch between viewing Sandbox and Live data using the toggle switch in the header.
 
