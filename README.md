@@ -170,7 +170,7 @@ Another option to integrate is direct API. The Direct API Integration enables me
 
 ### Plugins (not appliccable in sandbox enviroment) 
 
-You have the option to use popular e-commerce plugins. A software plug-in is an add-on for a program that adds functionality to it. It is mentioned that plugins are enabled for Live mode only. Below is a link of plugins and extensions with which you can integrate. Documentation
+You have the option to use popular e-commerce plugins. A software plug-in is an add-on for a program that adds functionality to it. It is mentioned that plugins are enabled for Live mode only. Below is a link of plugins and extensions with which you can integrate. 
 
 [Plugins instructions](https://ibanknbg.uat.simplify.com/commerce/docs/plugins/index)
 
