@@ -55,7 +55,7 @@ Your second option is to put an embedded form in your web page by adding the sec
 **Simple example html file for live and sandbox enviroment (embedded form)**
 ```
 	<script type="text/javascript"
-	        src="https://www.simplify.com/commerce/simplify.pay.js"></script>
+	        src="https://www.uat.simplify.com/commerce/simplify.pay.js"></script>
 	<iframe name="my-hosted-form"
 	        data-sc-key="<put here your Api public hosted api key>"
 	        data-name="Jasmine Green Tea"
