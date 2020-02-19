@@ -27,7 +27,7 @@ There are two easy ways in which you can start to use hosted payments on your we
 
 The checkout is fully hosted, compliant with updated PCI standards and requires no server-side scripting. Your first option is to add a modal with a button on your web site by adding the code given below and following the instructions.
 
-**Simple example html file for live and sandbox enviroment (modal)**
+**Simple example html file for live and sandbox environment (modal)**
 
 
 ```
@@ -52,7 +52,7 @@ Buy Now
 ```
 Your second option is to put an embedded form in your web page by adding the second code given.
 
-**Simple example html file for live and sandbox enviroment (embedded form)**
+**Simple example html file for live and sandbox environment (embedded form)**
 ```
 	<script type="text/javascript"
 	        src="https://www.uat.simplify.com/commerce/simplify.pay.js"></script>
@@ -168,7 +168,7 @@ Another option to integrate is direct API. The Direct API Integration enables me
 
 [Direct API Calls instructions](https://ibanknbg.uat.simplify.com/commerce/docs/api/index?api=payments)
 
-### Plugins (not appliccable in sandbox enviroment) 
+### Plugins (not appliccable in sandbox environment) 
 
 You have the option to use popular e-commerce plugins. A software plug-in is an add-on for a program that adds functionality to it. It is mentioned that plugins are enabled for Live mode only. Below is a link of plugins and extensions with which you can integrate. 
 
