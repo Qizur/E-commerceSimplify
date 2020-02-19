@@ -78,7 +78,7 @@ In **sandbox** enviroment you can put the sandbox hosted public key that was pro
 If hosted payments doesn't work straight away, below is a checklist that may help you get up and running.
 
 - Use a Hosted Payment Enabled API Key: If you plan on using the form to make payments, then you need to use the right key.
-- Use the Public Key: So you enabled an API Key Pair for hosted payments, but it still doesn't work. There are 2 keys, so make sure it is the public key that is used. Public keys start with sbpb_ (sandbox/test key) or lvpb_ (live key). For **sandbox** testing the [keys](https://nbgfilestorage.blob.core.windows.net/ecommerce/docs/i-Bank e-Simplify Sandbox Credentials.docx) are provided through the developers portal.
+- Use the Public Key: So you enabled an API Key Pair for hosted payments, but it still doesn't work. There are 2 keys, so make sure it is the public key that is used. Public keys start with sbpb_ (sandbox/test key) or lvpb_ (live key). For **sandbox** testing the [keys](https://nbgfilestorage.blob.core.windows.net/ecommerce/docs/i-Bank%20e-Simplify%20Sandbox%20Credentials.docx) are provided through the developers portal.
 - Use the Correct Website: You have successfully tested your hosted payments locally and now have switched to a live key. As a security measure, hosted payments will only work on the website you registered with Simplify.com when you onboarded. See [Domain Restrictions](https://ibanknbg.uat.simplify.com/commerce/docs/tools/hosted-payments#domain).
 
 ### Handling responses
