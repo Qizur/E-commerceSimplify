@@ -38,7 +38,7 @@ The checkout is fully hosted, compliant with updated PCI standards and requires 
 </head>
 <body>
 <script type="text/javascript"                  
-src="https://uat.simplify.com/commerce/simplify.pay.js"></script>                   
+src="https://simplify.com/commerce/simplify.pay.js"></script>                   
 <button data-sc-key="<put your Api public hosted key>"                 
 data-name="Jasmine Green Tea"                   
 data-description="Smooth tea with a rich jasmine bouquet"                   
@@ -55,7 +55,7 @@ Your second option is to put an embedded form in your web page by adding the sec
 **Simple example html file for live and sandbox environment (embedded form)**
 ```
 	<script type="text/javascript"
-	        src="https://www.uat.simplify.com/commerce/simplify.pay.js"></script>
+	        src="https://www.simplify.com/commerce/simplify.pay.js"></script>
 	<iframe name="my-hosted-form"
 	        data-sc-key="<put here your Api public hosted api key>"
 	        data-name="Jasmine Green Tea"
@@ -88,7 +88,7 @@ Simple example html file (modal)
 </head>
 <body>
 <script type="text/javascript"                  
-src="https://uat.simplify.com/commerce/simplify.pay.js"></script>                   
+src="https://simplify.com/commerce/simplify.pay.js"></script>                   
 <button data-sc-key="<your public hosted Live or Sandbox key>"                 
 data-name="Jasmine Green Tea"                   
 data-description="Smooth tea with a rich jasmine bouquet"                   
@@ -122,7 +122,7 @@ Use the redirect URL to return your customers back to your website with the resp
 This option is ideal for websites that do not use HTTPS.
 
 ```
-<script type="text/javascript" src="https://www.uat.simplify.com/commerce/simplify.pay.js"></script>
+<script type="text/javascript" src="https://www.simplify.com/commerce/simplify.pay.js"></script>
 <button data-sc-key="<put here your live public hosted api key>"
         data-name="Jasmine Green Tea"
         data-description="Smooth tea with a rich jasmine bouquet"
