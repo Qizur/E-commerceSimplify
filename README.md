@@ -74,6 +74,39 @@ The only difference is the "iframe" instead of "button" in a modal (in html file
 
 In **sandbox** enviroment you can put the sandbox hosted public key that was provided through the developers portal and use these [test Cards](https://ibanknbg.uat.simplify.com/commerce/docs/testing/test-card-numbers).
 
+## Card Tokenization
+
+There are 2 types of operations permitted when configuring your hosted payments page: **create.token** and **create.payment**. The default operation when building your button or iframe without explicitly defining an operation type e.g **data-operation='create.payment'**. Also, the configuration option e.g.data-operation=*'create.token'* is used to tokenize the credit card details entered by a user on the hosted payment form. This operation provides you with greater control over the payment experience. However, you need to download one of i-bank my Store's [SDKs](https://ibanknbg.uat.simplify.com/commerce/docs/sdk/index) and complete the payment on the server. So, if you want to generate a card token, you can use the code below for **Live or Sandbox environment**.
+
+Simple example html file (modal)
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<script type="text/javascript"                  
+src="https://uat.simplify.com/commerce/simplify.pay.js"></script>                   
+<button data-sc-key="<your public hosted Live or Sandbox key>"                 
+data-name="Jasmine Green Tea"                   
+data-description="Smooth tea with a rich jasmine bouquet"                   
+data-reference="99999"                  
+data-amount="3000"        
+data-operation="create.token"        
+data-color="#12B830">                   
+Buy Now                 
+</button>
+</body>
+</html>
+
+```
+
+After payment you can confirm that token is genberated.  **create.token** will return a card token in the response. It will not result in a payment. The card token can be used with our API to create a payment or save the card to a customer.
+
+
+
 ## Troubleshooting
 If hosted payments doesn't work straight away, below is a checklist that may help you get up and running.
 
