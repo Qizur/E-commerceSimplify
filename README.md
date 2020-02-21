@@ -103,7 +103,7 @@ Buy Now
 
 ```
 
-After payment you can confirm that token is genberated.  **create.token** will return a card token in the response. It will not result in a payment. The card token can be used with our API to create a payment or save the card to a customer.
+After payment you can confirm that token is generated.  **create.token** will return a card token in the response. It will not result in a payment. The card token can be used with our API to create a payment or save the card to a customer.
 
 
 
