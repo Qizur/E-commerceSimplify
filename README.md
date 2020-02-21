@@ -69,8 +69,8 @@ Your second option is to put an embedded form in your web page by adding the sec
 The only difference is the "iframe" instead of "button" in a modal (in html file). In the same way, follow the instructions below.
 
 - Copy and paste the code snippet below directly into your web page, in the location where you want the button to display (in your html file).
-- Change the value of the &#39;&#39;data-sc-key&#39;&#39; attribute to your own hosted public key (live or sandbox). This public key exists on the platform Account Settings / API keys / [your hosted public key](https://ibanknbg.uat.simplify.com/commerce/docs/tools/hosted-payments#keys)(only for live mode). [(Test api keys)](https://nbgfilestorage.blob.core.windows.net/ecommerce/docs/i-Bank%20e-Simplify%20Sandbox%20Credentials.docx)
-- Change the value of the &quot;data-reference&quot; attribute to your reference number for the payment.
+- Change the value of the **&#39;&#39;data-sc-key&#39;&#39;** attribute to your own hosted public key (live or sandbox). This public key exists on the platform Account Settings / API keys / [your hosted public key](https://ibanknbg.uat.simplify.com/commerce/docs/tools/hosted-payments#keys)(only for live mode). [(Test api keys)](https://nbgfilestorage.blob.core.windows.net/ecommerce/docs/i-Bank%20e-Simplify%20Sandbox%20Credentials.docx)
+- Change the value of the **&quot;data-reference&quot;** attribute to your reference number for the payment.
 
 In **sandbox** enviroment you can put the sandbox hosted public key that was provided through the developers portal and use these [test Cards](https://ibanknbg.uat.simplify.com/commerce/docs/testing/test-card-numbers).
 
