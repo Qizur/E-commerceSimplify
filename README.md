@@ -4,6 +4,8 @@
 
 [Hosted Checkout](#Hosted-checkout)
 
+[Hosted Chechout test only for Sandbox mode](#Hosted-Chechout-test-only-for-Sandbox-mode)
+
 [Direct API](#Direct-API)
 
 [Plugins](#Plugins)
@@ -27,7 +29,7 @@ There are two easy ways in which you can start to use hosted payments on your we
 
 The checkout is fully hosted, compliant with updated PCI standards and requires no server-side scripting. Your first option is to add a modal with a button on your web site by adding the code given below and following the instructions.
 
-**Simple example html file for live and sandbox environment (modal)**
+### Simple example html file for live and sandbox environment (modal)
 
 
 ```
@@ -52,7 +54,7 @@ Buy Now
 ```
 Your second option is to put an embedded form in your web page by adding the second code given.
 
-**Simple example html file for live and sandbox environment (embedded form)**
+### Simple example html file for live and sandbox environment (embedded form)
 ```
 	<script type="text/javascript"
 	        src="https://www.simplify.com/commerce/simplify.pay.js"></script>
@@ -68,17 +70,18 @@ Your second option is to put an embedded form in your web page by adding the sec
 
 The only difference is the "iframe" instead of "button" in a modal (in html file). In the same way, follow the instructions below.
 
+### Instructions
 - Copy and paste the code snippet below directly into your web page, in the location where you want the button to display (in your html file).
-- Change the value of the **&#39;&#39;data-sc-key&#39;&#39;** attribute to your own hosted public key (live or sandbox). This public key exists on the platform Account Settings / API keys / [your hosted public key](https://ibanknbg.uat.simplify.com/commerce/docs/tools/hosted-payments#keys)(only for live mode). [(Test api keys)](https://nbgfilestorage.blob.core.windows.net/ecommerce/docs/i-Bank%20e-Simplify%20Sandbox%20Credentials.docx)
-- Change the value of the **&quot;data-reference&quot;** attribute to your reference number for the payment.
+- Change the value of the &#39;&#39;data-sc-key&#39;&#39; attribute to your own hosted public key (live or sandbox). This public key exists on the platform Account Settings / API keys / [your hosted public key](https://ibanknbg.simplify.com/commerce/docs/tools/hosted-payments#keys)(only for live mode).
+- Change the value of the &quot;data-reference&quot; attribute to your reference number for the payment.
 
-In **sandbox** enviroment you can put the sandbox hosted public key that was provided through the developers portal and use these [test Cards](https://ibanknbg.uat.simplify.com/commerce/docs/testing/test-card-numbers).
+In **sandbox** enviroment you can put the sandbox hosted public key that was provided through the developers portal and use these [test Cards](https://ibanknbg.simplify.com/commerce/docs/testing/test-card-numbers).
 
-### Card Tokenization via Hosted Checkout
+## Card Tokenization
 
-There are 2 types of operations permitted when configuring your hosted payments page: **create.token** and **create.payment**. The default operation when building your button or iframe without explicitly defining an operation type e.g **data-operation='create.payment'**. Furthermore, the configuration option e.g.**data-operation='create.token'** is used to tokenize the credit card details entered by a user on the hosted payment form. This operation provides you with greater control over the payment experience. However, you need to download one of i-bank my Store's [SDKs](https://ibanknbg.uat.simplify.com/commerce/docs/sdk/index) and complete the payment on the server. So, if you want to generate a card token, you can use the code below for **Live or Sandbox environment**.
+There are 2 types of operations permitted when configuring your hosted payments page: **create.token** and **create.payment**. The default operation when building your button or iframe without explicitly defining an operation type e.g data-operation='create.payment'. Furthermore, the configuration option e.g.data-operation=*'create.token'* is used to tokenize the credit card details entered by a user on the hosted payment form. This operation provides you with greater control over the payment experience. However, you need to download one of i-bank my Store's [SDKs](https://ibanknbg.simplify.com/commerce/docs/sdk/index) and complete the payment on the server. So, if you want to generate a card token, you can use the code below for **Live or Sandbox environment**.
 
-Simple example html file (modal)
+### Simple example html file (modal)
 
 ```
 <!DOCTYPE html>
@@ -103,7 +106,7 @@ Buy Now
 
 ```
 
-After payment you can confirm that token is generated.  **create.token** will return a card token in the response. It will not result in a payment. The card token can be used with our API to create a payment or save the card to a customer.
+After payment you can confirm that token is genberated.  **create.token** will return a card token in the response. It will not result in a payment. The card token can be used with our API to create a payment or save the card to a customer.
 
 
 
@@ -112,7 +115,7 @@ If hosted payments doesn't work straight away, below is a checklist that may hel
 
 - Use a Hosted Payment Enabled API Key: If you plan on using the form to make payments, then you need to use the right key.
 - Use the Public Key: So you enabled an API Key Pair for hosted payments, but it still doesn't work. There are 2 keys, so make sure it is the public key that is used. Public keys start with sbpb_ (sandbox/test key) or lvpb_ (live key). For **sandbox** testing the [keys](https://nbgfilestorage.blob.core.windows.net/ecommerce/docs/i-Bank%20e-Simplify%20Sandbox%20Credentials.docx) are provided through the developers portal.
-- Use the Correct Website: You have successfully tested your hosted payments locally and now have switched to a live key. As a security measure, hosted payments will only work on the website you registered with Simplify.com when you onboarded. See [Domain Restrictions](https://ibanknbg.uat.simplify.com/commerce/docs/tools/hosted-payments#domain).
+- Use the Correct Website: You have successfully tested your hosted payments locally and now have switched to a live key. As a security measure, hosted payments will only work on the website you registered with Simplify.com when you onboarded. See [Domain Restrictions](https://ibanknbg.simplify.com/commerce/docs/tools/hosted-payments#domain).
 
 ### Handling responses
 
@@ -133,61 +136,41 @@ This option is ideal for websites that do not use HTTPS.
         Buy Now
 </button>
 ```
-More about modal redirect url [here](https://ibanknbg.uat.simplify.com/commerce/docs/tools/hosted-payments#redirect-url) .
+More about modal redirect url [here](https://ibanknbg.simplify.com/commerce/docs/tools/hosted-payments#redirect-url) .
 
-You can find more information about handling responses [here](https://ibanknbg.uat.simplify.com/commerce/docs/tools/hosted-payments#js).
-
-
+You can find more information about handling responses [here](https://ibanknbg.simplify.com/commerce/docs/tools/hosted-payments#js).
 
 
-### Test Results (live mode only)
 
-If you are in live mode, choose one option and follow the instructions for 5 scenarios with the example number card below. It&#39;s important for each transaction you fill in the data reference in the table below. 
+# Hosted Chechout test only for Sandbox mode
+### Test Results instructions
+
+In Sandbox mode, first of all you must confirm the automated i bank simplify email and generate your password. After you login with you credentials, you are able to use the platform.
+For testing in Sandbox mode you have to do enable the sandbox data (Account settings -> Account settings -> Show Sandbox data ON) and you have to generate your hosted **public** Sandbox key as the picture below. Account settings -> API keys 
+
+![HostedPublicKeySandbox](images/HostedPublicKeySandbox.PNG)
+
+Then you have to use the html code [Simple example html file for live and sandbox environment (modal)](#Simple-example-html-file-for-live-and-sandbox-environment-(modal)) to make the scenarios below. Follow the [Instructions](#Instructions)
+
+##Test Results
+
+| Transaction | Card Number | Details Card|  Expected Result | Data  Reference |  ID  |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Authorization/Pay| 2222 4053 4324 8877  | 05/21  100 | ACCEPTED |   |   |
+| Authorization/Pay| 5555 5555 5555 7462  | 05/21  100 | DECLINED |   |   |
+
+
+Scenarios 1 : Successful transaction. The status must be "APPROVED"
+
+Scenarios 2 : Failed transaction. The status must be "DECLINED".
 
 ! Note: For each transaction you have to change the &quot;data-reference&quot; and then you try to do the payment. After payment add the data-reference in the table. [Download the table](https://nbgfilestorage.blob.core.windows.net/ecommerce/docs/Test%20Results.docx).
 
-For more information about Hosted Checkout please visit this [documentation](https://ibanknbg.uat.simplify.com/commerce/docs/tools/hosted-payments).
-
-**Example number card**
-
-Correct Card Details:
-
-Number_card: 5123450000000008  , 3Ds: yes , CVC: 100  , Exp. Date: 05/21
-
-
-| Transaction | Card Number | ACS Simulator | Expected Result | Input Data | Test Case | Data  Reference |  ID  |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| Authorization/Pay| 5123450000000008 |  Authenticated | ACCEPTED | Correct Data | 3D-Secure Authenticated |   |   |
-| Authorization/Pay | 5123450000000008 |  NotAuthenticated | DECLINED | Correct Data | Not 3D-Secure Authenticated |   |   |
-| Authorization/Pay | 5123450000000008 |   Attempted | ACCEPTED | Correct Data | 3D-Secure Attempted |   |   |
-| Authorization/Pay | 5123450000000008 |   Unavailable | ACCEPTED | Correct Data | 3D-Secure Unavailable |   |   |
-| Authorization/Pay | 5123450000000008 |  Authenticated | DECLINED | Wrong CVV (example 102) | 3D-Secure Authenticated |   |   |
-
-Then try to make a payment with example number card. This card has ACS Simulator so, you can choose different option (different test cases). 
-
-**Scenario 1:** Successful transaction with 3DS authentication successful.
-
-Enter the card details and all other required details for the transaction. In the following 3DS emulator choose &quot;Authentication successful&quot; and press &quot;Submit&quot;. The payment should be completed successfully.
-
-**Scenario 2:** _Transaction with 3DS authentication failure._
-
-Enter all required details as before. In the following 3DS emulator choose &quot;Authentication failed&quot; and press &quot;Submit&quot;.The payment should be declined.
-
-**Scenario 3:** _Successful transaction with 3DS authentication attempted._
-
-Enter all required details as before. In the following 3DS emulator choose &quot;Authentication Attempted&quot; and press &quot;Submit&quot;. The payment should be completed successfully.
-
-**Scenario 4:** _Successful transaction with 3DS authentication unavailable_
-
-Enter all required details as before. In the following 3DS emulator choose &quot;Authentication Not Available&quot; and press &quot;Submit&quot;. The payment should be successful.
-
-**Scenario 5:** Failed _transaction using a wrong CVC number with 3DS authentication successful._
-
-Enter all required details as before, but with an invalid CVC number, 102 instead of 100 in this test case. In the following 3DS emulator choose &quot;Authentication Successful&quot; and press &quot;Submit&quot;.The payment should be declined.
+For more information about Hosted Checkout please visit this [documentation](https://ibanknbg.simplify.com/commerce/docs/tools/hosted-payments).
 
 After all these scenarios, you can confirm the result from the merchant administrator page using the &quot;data-reference&quot; into the Simplify platform / Transaction / Payments / filter by reference.
 
- ![img1](images/img1.png)
+![img1](images/img1.png)
 
 After finding the transaction you can see the details payments. When you find the payment with your &quot;data reference&quot; you can note the &quot;ID&quot; value in the table, too.
 
@@ -195,20 +178,21 @@ After finding the transaction you can see the details payments. When you find th
 
 After filling in the data reference and the ID for each scenario, you have to send us the updated table.
 
+
 ### Direct API 
 
-Another option to integrate is direct API. The Direct API Integration enables merchants to process credit card and check transactions in real time directly through ecommerce solution. To use direct API calls you have to download first the SDK from [here](https://ibanknbg.uat.simplify.com/commerce/docs/sdk/index). Also, in this case you have to use the (default) public API key (Live or SandBox). In below link you can find the API calls that you can use with instructions. Each section of our API includes detailed information about methods & parameters as well as example code.
+Another option to integrate is direct API. The Direct API Integration enables merchants to process credit card and check transactions in real time directly through ecommerce solution. To use direct API calls you have to download first the SDK from [here](https://ibanknbg.simplify.com/commerce/docs/sdk/index). Also, in this case you have to use the (default) public API key (Live or SandBox). In below link you can find the API calls that you can use with instructions. Each section of our API includes detailed information about methods & parameters as well as example code.
 
-[Direct API Calls instructions](https://ibanknbg.uat.simplify.com/commerce/docs/api/index?api=payments)
+[Direct API Calls instructions](https://ibanknbg.simplify.com/commerce/docs/api/index?api=payments)
 
 ### Plugins (not appliccable in sandbox environment) 
 
 You have the option to use popular e-commerce plugins. A software plug-in is an add-on for a program that adds functionality to it. It is mentioned that plugins are enabled for Live mode only. Below is a link of plugins and extensions with which you can integrate. 
 
-[Plugins instructions](https://ibanknbg.uat.simplify.com/commerce/docs/plugins/index)
+[Plugins instructions](https://ibanknbg.simplify.com/commerce/docs/plugins/index)
 
 ### Available SDKs
 SDK (software development kit) is a set of software tools and programs used by developers to create applications for specific platforms. Below is a list of programming languages we provide support to develop with.  
 Java, php, Ruby, Python Pelr, .net, node.js, ios, android
 
-[SDKs instructions](https://ibanknbg.uat.simplify.com/commerce/docs/sdk/index)
+[SDKs instructions](https://ibanknbg.simplify.com/commerce/docs/sdk/index)
