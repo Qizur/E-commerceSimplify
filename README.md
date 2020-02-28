@@ -143,16 +143,15 @@ You can find more information about handling responses [here](https://ibanknbg.s
 
 
 # Hosted Chechout test only for Sandbox mode
-### Test Results instructions
 
 In Sandbox mode, first of all you must confirm the automated i bank simplify email and generate your password. After you login with you credentials, you are able to use the platform.
 For testing in Sandbox mode you have to do enable the sandbox data (Account settings -> Account settings -> Show Sandbox data ON) and you have to generate your hosted **public** Sandbox key as the picture below. Account settings -> API keys 
 
 ![HostedPublicKeySandbox](images/HostedPublicKeySandbox.PNG)
 
-Then you have to use the html code [Simple example html file for live and sandbox environment (modal)](#Simple-example-html-file-for-live-and-sandbox-environment-(modal)) to make the scenarios below. Follow the [Instructions](#Instructions)
+Then you have to use the html code [Simple example html file for live and sandbox environment (modal)](#user-content-simple-example-html-file-for-live-and-sandbox-environment-(modal)) to make the scenarios below. Follow the [Instructions](#Instructions)
 
-##Test Results
+## Test Results
 
 | Transaction | Card Number | Details Card|  Expected Result | Data  Reference |  ID  |
 | --- | --- | --- | --- | --- | --- | 
