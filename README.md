@@ -149,7 +149,7 @@ For testing in Sandbox mode you have to do enable the sandbox data (Account sett
 
 ![HostedPublicKeySandbox](images/HostedPublicKeySandbox.PNG)
 
-Then you have to use the html code [Simple example html file for live and sandbox environment (modal)](#user-content-simple-example-html-file-for-live-and-sandbox-environment-(modal)) to make the scenarios below. Follow the [Instructions](#Instructions)
+Then you have to use the html code [Simple example html file for live and sandbox environment (modal)](#simple-example-html-file-for-live-and-sandbox-environment-modal) to make the scenarios below. Follow the [Instructions](#Instructions)
 
 ## Test Results
 
