@@ -155,7 +155,7 @@ Then you have to use the html code [Simple example html file for live and sandbo
 ##Test Results
 
 | Transaction | Card Number | Details Card|  Expected Result | Data  Reference |  ID  |
-| --- | --- | --- | --- | --- | --- | --- | --- |
+| --- | --- | --- | --- | --- | --- | 
 | Authorization/Pay| 2222 4053 4324 8877  | 05/21  100 | ACCEPTED |   |   |
 | Authorization/Pay| 5555 5555 5555 7462  | 05/21  100 | DECLINED |   |   |
 
