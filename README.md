@@ -8,7 +8,7 @@
 
 [Direct API](#Direct-API)
 
-[Plugins](#Plugins-(not-appliccable-in-sandbox-environment) )
+[Plugins](#Plugins-(not-appliccable-in-sandbox-environment))
 
 [SDKs](#Available-SDKs)
 
