@@ -190,6 +190,7 @@ Another option to integrate is direct API. The Direct API Integration enables me
 You have the option to use popular e-commerce plugins. A software plug-in is an add-on for a program that adds functionality to it. It is mentioned that plugins are enabled for Live mode only. Below is a link of plugins and extensions with which you can integrate. 
 
 [Plugins instructions](https://ibanknbg.simplify.com/commerce/docs/plugins/index)
+[Shopify plugin](https://gateway.force.com/ibanknbg/s/article/shopify-installation-guide)
 
 ### Available SDKs
 SDK (software development kit) is a set of software tools and programs used by developers to create applications for specific platforms. Below is a list of programming languages we provide support to develop with.  
