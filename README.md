@@ -77,7 +77,7 @@ The only difference is the "iframe" instead of "button" in a modal (in html file
 
 In **sandbox** enviroment you can put the sandbox hosted public key that was provided through the developers portal and use these [test Cards](https://ibanknbg.simplify.com/commerce/docs/testing/test-card-numbers).
 
-## Card Tokenization (in this case you must use SDK - Direct API)
+## Card Tokenization (in this case you must use SDK - Direct API only (not hosted integration))
 
 There are 2 types of operations permitted when configuring your hosted payments page: **create.token** and **create.payment**. The default operation when building your button or iframe without explicitly defining an operation type e.g data-operation='create.payment'. Furthermore, the configuration option e.g.data-operation=*'create.token'* is used to tokenize the credit card details entered by a user on the hosted payment form. This operation provides you with greater control over the payment experience. However, you need to download one of i-bank my Store's [SDKs](https://ibanknbg.simplify.com/commerce/docs/sdk/index) and complete the payment on the server. So, if you want to generate a card token, you can use the code below for **Live or Sandbox environment**.
 
